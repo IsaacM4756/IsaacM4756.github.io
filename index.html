@@ -3,62 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awsome Shop</title>
+    <title>My Mushroom Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #677D6A;
+            background-color: #f8f9fa;
             margin: 0;
-            color: red; 
             padding: 0;
-
-
-
-            
         }
         header {
-            background-color: #1A3636;
-            color: #D6BD98;
-            padding: 0;
-            text-align: center;                
+            background-color: #6f8c6d;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
-
-        
         nav {
             text-align: center;
             margin: 15px 0;
         }
-    nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #40534C;
-        font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-        background-color: #D6BD98;
-    }
-
-    /* Highlight on hover */
-    nav a:hover {
-        background-color: #40534C;
-        color: #D6BD98;
-    }
-
-    /* Style the active link with a border */
-    nav a.active {
-        border: 2px solid #ff6f61; /* Border for active page */
-        background-color: #ffe5e0; /* Optional: background color for active page */
-        color: #ff6f61;
-    }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6f8c6d;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid transparent; /* Default border color */
+        }
+        nav a:hover {
+            background-color: #6f8c6d;
+            color: white;
+            border-color: yellow; /* Border color on hover */
+        }
+        nav a.active {
+            border: 2px solid yellow; /* Border color for the active page */
+            background-color: #e0f7e0; /* Background color for the active page */
+            color: #6f8c6d;
+        }
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        .product h2 {
+            margin-top: 0;
         }
         footer {
-            background-color: #1A3636;
-            color: #D6BD98;
+            background-color: #6f8c6d;
+            color: white;
             text-align: center;
             padding: 10px 0;
             margin-top: 30px;
@@ -68,51 +76,35 @@
 <body>
 
 <header>
-    <h1>Welcome to My Awsome Shop</h1>
+    <h1>Welcome to My Mushroom Shop</h1>
 </header>
 
-
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-
-
-
-
-
-
-
-
 <div class="container">
-    <div class="intro">
-        <h1>trhyrehyhrehreh</h1>
-        <p>erthertherthrethretrthethrethrthtrhre</p>
-    </div>
-
+    <h2>Our Mushrooms</h2>
     <div class="products">
         <div class="product">
-            <img src="download (2).jpg" alt="Candy 1">
-            <h2>erthrethrethretherth</h2>
-            <p>dfboenrbnffbgjknnjfkgdjkfngbdjkngfdb</p>
+            <h2>Shiitake Mushrooms</h2>
+            <p>A flavorful and meaty mushroom, perfect for soups and stir-fries.</p>
         </div>
         <div class="product">
-            <img src="download (2).jpg" alt="Candy 2">
-            <h2>HIRBIR</h2>
-            <p>esgbebgekjrbjgbekrgbesrjbgekgberkgjbekrgjb ekjrgbekjsr bgekjr bekj bgskrjg b</p>
+            <h2>Portobello Mushrooms</h2>
+            <p>Large and hearty mushrooms ideal for grilling and roasting.</p>
         </div>
         <div class="product">
-            <img src="download (2).jpg" alt="Candy 3">
-            <h2>nfvjner</h2>
-            <p>ergeg ergrshrjerrej nrekj nelrk jn relk jnrlkej nlk en k rnlkrjn lek jn lkehnj</p>
+            <h2>Oyster Mushrooms</h2>
+            <p>Tender and delicate mushrooms with a mild flavor, great for sautéing.</p>
         </div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 My Shop. All rights reserved.</p>
+    <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
 </footer>
 
 </body>
