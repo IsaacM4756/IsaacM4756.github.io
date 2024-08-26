@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - My Candy Shop</title>
+    <title>My Candy Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,47 +26,43 @@
             text-decoration: none;
             color: #ff6f61;
             font-weight: bold;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-            text-align: center;
-        }
-        form {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-top: 10px;
-            font-size: 1.2em;
-            color: #666;
-        }
-        input, textarea {
-            padding: 10px;
-            margin-top: 5px;
-            font-size: 1em;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        textarea {
-            resize: vertical;
-            height: 150px;
-        }
-        button {
-            margin-top: 20px;
             padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid transparent; /* Default border color */
+        }
+        nav a:hover {
             background-color: #ff6f61;
             color: white;
-            border: none;
+            border-color: yellow; /* Border color on hover */
+        }
+        nav a.active {
+            border: 2px solid yellow; /* Border color for the active page */
+            background-color: #ffe5e0; /* Background color for the active page */
+            color: #ff6f61;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 1.2em;
-            cursor: pointer;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        .product h2 {
+            margin-top: 0;
         }
         footer {
             background-color: #ff6f61;
@@ -80,17 +76,40 @@
 <body>
 
 <header>
-    <h1>Contact My Candy Shop</h1>
+    <h1>Welcome to My Candy Shop</h1>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-    <h1>Get in Touch</h1>
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <h2>Chocolate Bar</h2>
+            <p>Delicious milk chocolate with a smooth, creamy texture.</p>
+        </div>
+        <div class="product">
+            <h2>Gummy Bears</h2>
+            <p>Chewy and fruity gummy bears in assorted flavors.</p>
+        </div>
+        <div class="product">
+            <h2>Lollipops</h2>
+            <p>Colorful lollipops with a variety of sweet flavors.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Candy Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
     <form>
         <label for="name">Name:</label>
         <input type="text" id="
