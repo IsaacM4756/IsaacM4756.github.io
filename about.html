@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - My Candy Shop</title>
+    <title>About Us - My Mushroom Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #ff6f61;
+            background-color: #6f8c6d;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -24,26 +24,31 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #ff6f61;
+            color: #6f8c6d;
             font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid transparent;
+        }
+        nav a:hover {
+            background-color: #6f8c6d;
+            color: white;
+            border-color: yellow;
+        }
+        nav a.active {
+            border: 2px solid yellow;
+            background-color: #e0f7e0;
+            color: #6f8c6d;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #333;
             text-align: center;
         }
-        p {
-            font-size: 1.2em;
-            color: #666;
-            line-height: 1.6em;
-        }
         footer {
-            background-color: #ff6f61;
+            background-color: #6f8c6d;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -54,24 +59,22 @@
 <body>
 
 <header>
-    <h1>About My Candy Shop</h1>
+    <h1>About Us</h1>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html" class="active">About</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-    <h1>Our Story</h1>
-    <p>My Candy Shop was founded in 2024 with a mission to bring sweetness and joy to the community. We believe that everyone deserves a little treat now and then, and our goal is to provide a wide variety of high-quality candies that cater to all tastes.</p>
-    <p>From classic favorites to new and exciting flavors, we are passionate about curating a selection that will make you smile. Whether you're looking for something nostalgic or something new to try, we've got you covered.</p>
-    <p>Our shop is more than just a place to buy candy; it's a place where memories are made. We look forward to serving you and being a part of your sweet moments.</p>
+    <h2>About My Mushroom Shop</h2>
+    <p>At My Mushroom Shop, we are passionate about providing the finest and freshest mushrooms. Our selection includes various types of mushrooms, each with unique flavors and textures, perfect for any culinary creation. We are committed to quality and sustainability, ensuring our mushrooms are grown with care and harvested at peak freshness.</p>
 </div>
 
 <footer>
-    <p>&copy; 2024 My Candy Shop. All rights reserved.</p>
+    <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
 </footer>
 
 </body>
