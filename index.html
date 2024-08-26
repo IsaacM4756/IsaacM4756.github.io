@@ -17,6 +17,12 @@
             padding: 10px 0;
             text-align: center;
         }
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Adjust height if needed */
+            object-fit: cover;
+        }
         nav {
             text-align: center;
             margin: 15px 0;
@@ -49,16 +55,16 @@
         }
         .products {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            flex-direction: column; /* Align products vertically */
+            align-items: center; /* Center-align products horizontally */
+            gap: 20px; /* Space between products */
         }
         .product {
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 20px;
-            width: 30%;
+            width: 80%; /* Adjust width as needed */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
             background-color: white;
         }
         .product h2 {
@@ -77,6 +83,7 @@
 
 <header>
     <h1>Welcome to My Mushroom Shop</h1>
+    <img src="mushroom-banner.jpg" alt="Mushroom Banner">
 </header>
 
 <nav>
