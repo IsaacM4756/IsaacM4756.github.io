@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mushroom Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D6BD98; /* Background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1A3636; /* Header background color */
+            color: #D6BD98; /* Header text color */
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Adjust height if needed */
+            object-fit: cover;
+        }
+        nav {
+            text-align: center;
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #40534C; /* Navigation link color */
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid transparent; /* Default border color */
+        }
+        nav a:hover {
+            background-color: #40534C; /* Navigation hover background color */
+            color: #D6BD98; /* Navigation hover text color */
+            border-color: #677D6A; /* Border color on hover */
+        }
+        nav a.active {
+            border: 2px solid #677D6A; /* Border color for the active page */
+            background-color: #D6BD98; /* Background color for the active page */
+            color: #40534C; /* Text color for the active page */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-direction: column; /* Align products vertically */
+            align-items: center; /* Center-align products horizontally */
+            gap: 20px; /* Space between products */
+            background-image: url('background.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the background image */
+            padding: 40px; /* Add padding to separate content from edges */
+            border-radius: 10px; /* Rounded corners for the product section */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the section */
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 80%; /* Adjust width as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            max-height: 200px; /* Adjust height if needed */
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px; /* Space between image and text */
+        }
+        .product h2 {
+            margin-top: 0;
+        }
+        .product button {
+            background-color: #40534C; /* Button background color */
+            color: #D6BD98; /* Button text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product button:hover {
+            background-color: #677D6A; /* Button hover background color */
+            color: #1A3636; /* Button hover text color */
+        }
+        footer {
+            background-color: #1A3636; /* Footer background color */
+            color: #D6BD98; /* Footer text color */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Mushroom Shop</h1>
+    <img src="mushroom-banner.jpg" alt="Mushroom Banner">
+</header>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Our Mushrooms</h2>
+    <div class="products">
+        <div class="product">
+            <img src="shiitake.jpg" alt="Shiitake Mushrooms">
+            <h2>Shiitake
