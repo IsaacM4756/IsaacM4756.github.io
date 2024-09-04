@@ -23,6 +23,7 @@
             max-height: 300px; /* Adjust height if needed */
             object-fit: cover;
         }
+
         .nav-wrapper {
             background-color: #677D6A; /* Background color behind the buttons */
             padding: 10px 0; /* Adjust padding as needed */
@@ -44,38 +45,29 @@
         nav a:hover {
             background-color: #40534C; /* Navigation hover background color */
             color: #D6BD98; /* Navigation hover text color */
-            border-color: #D6BD98; /* Border color on hover */
+            border-color: #677D6A; /* Border color on hover */
         }
         nav a.active {
-            border: 2px solid #D6BD98; /* Border color for the active page */
+            border: 2px solid #677D6A; /* Border color for the active page */
             background-color: #D6BD98; /* Background color for the active page */
             color: #40534C; /* Text color for the active page */
         }
-        .products-section {
-            background-image: url('background.jpg'); /* Background image */
-            background-size: cover; /* Cover the entire section */
-            background-position: center; /* Center the background image */
-            width: 100%; /* Full width */
-            height: 100vh; /* Full viewport height */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: #1A3636;
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
         }
         .products {
             display: flex;
             flex-direction: column; /* Align products vertically */
             align-items: center; /* Center-align products horizontally */
             gap: 20px; /* Space between products */
-            padding: 40px; /* Add padding to separate content from edges */
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for contrast */
-            border-radius: 10px; /* Rounded corners for the product section */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the section */
         }
         .product {
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 50px;
             padding: 20px;
             width: 80%; /* Adjust width as needed */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -118,7 +110,7 @@
 
 <header>
     <h1>Welcome to My Mushroom Shop</h1>
-    <img src="mushroom-banner.jpg" alt="Mushroom Banner">
+    <img src="brown-mushroom-53494-scaled.webp" alt="Mushroom Banner">
 </header>
 
 <div class="nav-wrapper">
@@ -129,23 +121,23 @@
     </nav>
 </div>
 
-<div class="products-section">
+<div class="container">
     <h2>Our Mushrooms</h2>
     <div class="products">
         <div class="product">
-            <img src="shiitake.jpg" alt="Shiitake Mushrooms">
+            <img src="download.webp" alt="Shiitake Mushrooms">
             <h2>Shiitake Mushrooms</h2>
             <p>A flavorful and meaty mushroom, perfect for soups and stir-fries.</p>
             <button onclick="window.location.href='buy-shiitake.html'">Buy Now</button>
         </div>
         <div class="product">
-            <img src="portobello.jpg" alt="Portobello Mushrooms">
+            <img src="download.webp" alt="Portobello Mushrooms">
             <h2>Portobello Mushrooms</h2>
             <p>Large and hearty mushrooms ideal for grilling and roasting.</p>
             <button onclick="window.location.href='buy-portobello.html'">Buy Now</button>
         </div>
         <div class="product">
-            <img src="oyster.jpg" alt="Oyster Mushrooms">
+            <img src="download.webp" alt="Oyster Mushrooms">
             <h2>Oyster Mushrooms</h2>
             <p>Tender and delicate mushrooms with a mild flavor, great for sautéing.</p>
             <button onclick="window.location.href='buy-oyster.html'">Buy Now</button>
