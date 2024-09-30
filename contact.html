@@ -52,9 +52,6 @@
             background-color: #40534C; /* Background color for active page */
             color: #D6BD98; /* Text color for active page */
             border: 5px solid #40534C; /* White border for active page */
-
-            background-color: #D6BD98; /* Navigation button selected background color */
-            color: #40534C; /* Navigation button text color */
         }
 
         .container {
@@ -97,7 +94,7 @@
     <p>Address: 123 Mushroom Lane, Funghi City, FA 12345</p>
 
     <h3>Contact Form</h3>
-    <form id="contactForm">
+    <form id="contactForm" onsubmit="handleSubmit(event)">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -116,11 +113,11 @@
 </footer>
 
 <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
+    function handleSubmit(event) {
         event.preventDefault(); // Prevent the default form submission
         alert('Your message has been sent!'); // Display a confirmation message
         // Here, you could add code to send the form data to a server if needed
-    });
+    }
 </script>
 
 </body>
