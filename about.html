@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - My Mushroom Shop</title>
+    <title>About My Mushroom Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #D6BD98; /* Background color */
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #6f8c6d;
-            color: white;
+            background-color: #1A3636; /* Header background color */
+            color: #D6BD98; /* Header text color */
             padding: 10px 0;
             text-align: center;
         }
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Adjust height if needed */
+            object-fit: cover;
+        }
+
+        .nav-wrapper {
+            background-color: #677D6A; /* Background color behind the buttons */
+            padding: 20px 0; /* Adjust padding as needed */
+        }
         nav {
             text-align: center;
-            margin: 15px 0;
+            margin: 0;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #6f8c6d;
+            color: #40534C; /* Navigation link color */
             font-weight: bold;
             padding: 10px 20px;
             border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            border: 2px solid transparent;
+            transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+            background-color: #40534C; /* Background color for all buttons */
+            border: 2px solid transparent; /* Default border */
+            color: #D6BD98; /* Text color for all buttons */
         }
         nav a:hover {
-            background-color: #6f8c6d;
-            color: white;
-            border-color: yellow;
+            background-color: #D6BD98; /* Navigation hover background color */
+            color: #40534C; /* Navigation hover text color */
         }
         nav a.active {
-            border: 2px solid yellow;
-            background-color: #e0f7e0;
-            color: #6f8c6d;
+            background-color: #40534C; /* Background color for active page */
+            color: #D6BD98; /* Text color for active page */
+            border: 5px solid #40534C; /* White border for active page */
+
+            background-color: #D6BD98; /* Navigation button selected background color */
+            color: #40534C; /* Navigation button text color */
         }
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
         }
+        
+        
         footer {
-            background-color: #6f8c6d;
-            color: white;
+            background-color: #1A3636; /* Footer background color */
+            color: #D6BD98; /* Footer text color */
             text-align: center;
             padding: 10px 0;
             margin-top: 30px;
@@ -59,23 +77,26 @@
 <body>
 
 <header>
-    <h1>About Us</h1>
+    <h1>Welcome to My Mushroom Shop</h1>
+    <img src="brown-mushroom-53494-scaled.webp" alt="Mushroom Banner">
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-<div class="container">
-    <h2>About My Mushroom Shop</h2>
-    <p>At My Mushroom Shop, we are passionate about providing the finest and freshest mushrooms. Our selection includes various types of mushrooms, each with unique flavors and textures, perfect for any culinary creation. We are committed to quality and sustainability, ensuring our mushrooms are grown with care and harvested at peak freshness.</p>
+<div class="nav-wrapper">
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </div>
+
+<body>
+    <p>
+    iuewhfiwuefhwiuhefowiehfuiaeowfhuoieawfhuioewfahuioefwhuiewfauihohefwauih
+    
+    
+    </p>
+    
+</body>
 
 <footer>
     <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
