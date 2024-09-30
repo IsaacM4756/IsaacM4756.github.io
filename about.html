@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About My Mushroom Shop</title>
+    <title>About Us - My Mushroom Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,7 +26,7 @@
 
         .nav-wrapper {
             background-color: #677D6A; /* Background color behind the buttons */
-            padding: 20px 0; /* Adjust padding as needed */
+            padding: 10px 0; /* Adjust padding as needed */
         }
         nav {
             text-align: center;
@@ -51,10 +51,7 @@
         nav a.active {
             background-color: #40534C; /* Background color for active page */
             color: #D6BD98; /* Text color for active page */
-            border: 5px solid #40534C; /* White border for active page */
-
-            background-color: #D6BD98; /* Navigation button selected background color */
-            color: #40534C; /* Navigation button text color */
+            border: 2px solid white; /* White border for active page */
         }
 
         .container {
@@ -63,18 +60,21 @@
             padding: 20px;
             text-align: center;
         }
-        
-
-        about {
-            background-color: #D6BD98; /* Footer background color */
-            color: #D6BD98; /* Footer text color */
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 30px;
+        .about-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h2 {
+            margin-top: 0;
+            color: #1A3636;
+        }
+        .about-section p {
+            font-size: 1.2em;
+            color: #40534C;
         }
 
-        
-        
         footer {
             background-color: #1A3636; /* Footer background color */
             color: #D6BD98; /* Footer text color */
@@ -87,26 +87,34 @@
 <body>
 
 <header>
-    <h1>About My Mushroom Shop</h1>
+    <h1>About Us</h1>
     <img src="brown-mushroom-53494-scaled.webp" alt="Mushroom Banner">
 </header>
 
 <div class="nav-wrapper">
     <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 </div>
 
-<body>
-    <p>
-    iuewhfiwuefhwiuhefowiehfuiaeowfhuoieawfhuioewfahuioefwhuiewfauihohefwauih
-    
-    
-    </p>
-    
-</body>
+<div class="container">
+    <div class="about-section">
+        <h2>Our Story</h2>
+        <p>Welcome to My Mushroom Shop, where we believe in providing the freshest, most delicious mushrooms grown with care and love. From shiitake to oyster mushrooms, we are passionate about offering high-quality fungi to elevate your culinary experiences.</p>
+
+        <h2>Why Mushrooms?</h2>
+        <p>Mushrooms are not only flavorful but packed with nutrients. They are versatile, sustainable, and a great addition to any dish. Our team is dedicated to growing organic mushrooms in an eco-friendly environment, ensuring you get the best product every time.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to bring you the finest mushrooms, grown with sustainability in mind. We aim to inspire a love for fungi in every customer while supporting sustainable farming practices.</p>
+    </div>
+</div>
 
 <footer>
     <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
