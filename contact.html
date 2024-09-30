@@ -97,7 +97,7 @@
     <p>Address: 123 Mushroom Lane, Funghi City, FA 12345</p>
 
     <h3>Contact Form</h3>
-    <form action="#" method="post">
+    <form id="contactForm">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -114,6 +114,14 @@
 <footer>
     <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
 </footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        alert('Your message has been sent!'); // Display a confirmation message
+        // Here, you could add code to send the form data to a server if needed
+    });
+</script>
 
 </body>
 </html>
