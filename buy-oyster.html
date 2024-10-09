@@ -110,4 +110,49 @@
             margin-top: 30px;
         }
     </style>
-</head
+</head>
+<body>
+
+<header>
+    <h1>Oyster Mushrooms</h1>
+    <img src="brown-mushroom-53494-scaled.webp" alt="Mushroom Banner">
+</header>
+
+<div class="nav-wrapper">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="buy-oyster.html" class="active">Buy Oyster</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Oyster Mushrooms</h2>
+    <img src="download.webp" alt="Oyster Mushrooms">
+    <p>Tender and delicate mushrooms with a mild flavor, great for sautéing.</p>
+    <p>Price: $5.00 per pound</p>
+    <button onclick="showModal()">Buy Now</button>
+</div>
+
+<div class="modal" id="purchaseModal">
+    <h3>Thank you for your purchase!</h3>
+    <button onclick="closeModal()">Close</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
+</footer>
+
+<script>
+    function showModal() {
+        document.getElementById('purchaseModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('purchaseModal').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
