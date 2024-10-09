@@ -6,7 +6,7 @@
     <title>[Product Name] - My Mushroom Shop</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #D6BD98;
             margin: 0;
             padding: 0;
@@ -16,6 +16,7 @@
             color: #D6BD98;
             padding: 10px 0;
             text-align: center;
+            font-family: 'Georgia', serif;
         }
         header img {
             width: 100%;
@@ -39,6 +40,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             background-color: #40534C;
+            font-family: 'Segoe UI', sans-serif;
         }
         nav a:hover {
             background-color: #D6BD98;
@@ -54,6 +56,24 @@
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            font-family: 'Verdana', sans-serif;
+        }
+        .container img {
+            width: 100%;
+            max-height: 300px;
+            border: 8px solid #40534C;
+            border-radius: 15px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #1A3636;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif;
+        }
+        p {
+            font-size: 18px;
+            color: #40534C;
+            margin-bottom: 20px;
         }
         .buy-button {
             background-color: #40534C;
@@ -76,6 +96,7 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 30px;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         /* Modal Styling */
@@ -103,6 +124,7 @@
             color: #1A3636;
             font-size: 24px;
             margin-bottom: 10px;
+            font-family: 'Georgia', serif;
         }
         .modal-content p {
             color: #40534C;
@@ -140,7 +162,7 @@
 
 <div class="container">
     <h2>[Product Name]</h2>
-    <img src="download.webp" alt="[Product Name]" style="width:100%; max-height: 300px;">
+    <img src="download.webp" alt="[Product Name]">
     <p>[Product Description]</p>
     <p>Price: $[Product Price] per pound</p>
     <button class="buy-button" onclick="showModal()">Buy Now</button>
