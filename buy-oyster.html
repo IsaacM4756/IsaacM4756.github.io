@@ -22,7 +22,7 @@
             height: auto;
             max-height: 300px;
             object-fit: cover;
-            border-bottom: 5px solid #677D6A; /* Stylized border */
+            border-bottom: 5px solid #40534C;
         }
         .nav-wrapper {
             background-color: #677D6A;
@@ -57,50 +57,25 @@
             text-align: center;
         }
         .container img {
-            border: 3px solid #40534C; /* Stylized image border */
-            border-radius: 10px;
+            width: 100%;
+            height: auto;
             max-height: 300px;
+            border: 3px solid #40534C;
+            border-radius: 10px;
         }
-        .container h2 {
-            font-size: 28px;
-            color: #40534C;
-        }
-        .container p {
-            font-size: 18px;
-            color: #1A3636;
-        }
-        button {
+        .buy-button {
             background-color: #40534C;
             color: #D6BD98;
-            padding: 12px 24px;
+            border: 2px solid #D6BD98;
+            padding: 15px 30px;
             font-size: 18px;
-            border: 2px solid #1A3636;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        button:hover {
+        .buy-button:hover {
             background-color: #D6BD98;
             color: #40534C;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #D6BD98;
-            border: 3px solid #40534C;
-            padding: 20px;
-            text-align: center;
-            z-index: 100;
-        }
-        .modal h3 {
-            color: #1A3636;
-            font-size: 24px;
-        }
-        .modal button {
-            margin-top: 10px;
         }
         footer {
             background-color: #1A3636;
@@ -131,28 +106,13 @@
     <h2>Oyster Mushrooms</h2>
     <img src="download.webp" alt="Oyster Mushrooms">
     <p>Tender and delicate mushrooms with a mild flavor, great for sautéing.</p>
-    <p>Price: $5.00 per pound</p>
-    <button onclick="showModal()">Buy Now</button>
-</div>
-
-<div class="modal" id="purchaseModal">
-    <h3>Thank you for your purchase!</h3>
-    <button onclick="closeModal()">Close</button>
+    <p>Price: $6.50 per pound</p>
+    <button class="buy-button" onclick="alert('Thank you for your purchase!')">Buy Now</button>
 </div>
 
 <footer>
     <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
 </footer>
-
-<script>
-    function showModal() {
-        document.getElementById('purchaseModal').style.display = 'block';
-    }
-
-    function closeModal() {
-        document.getElementById('purchaseModal').style.display = 'none';
-    }
-</script>
 
 </body>
 </html>
