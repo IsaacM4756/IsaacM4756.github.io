@@ -3,104 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mushrooom Shop</title>
+    <title>My Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #D6BD98; /* Background color */
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #1A3636; /* Header background color */
-            color: #D6BD98; /* Header text color */
+            background-color: #ff6f61;
+            color: white;
             padding: 10px 0;
             text-align: center;
         }
-        header img {
-            width: 100%;
-            height: auto;
-            max-height: 300px; /* Adjust height if needed */
-            object-fit: cover;
-        }
-
-        .nav-wrapper {
-            background-color: #677D6A; /* Background color behind the buttons */
-            padding: 10px 0; /* Adjust padding as needed */
-        }
         nav {
             text-align: center;
-            margin: 0;
+            margin: 15px 0;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #40534C; /* Navigation link color */
+            color: #ff6f61;
             font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-            background-color: #40534C; /* Background color for all buttons */
-            border: 2px solid transparent; /* Default border */
-            color: #D6BD98; /* Text color for all buttons */
         }
-        nav a:hover {
-            background-color: #D6BD98; /* Navigation hover background color */
-            color: #40534C; /* Navigation hover text color */
-        }
-        nav a.active {
-            background-color: #40534C; /* Background color for active page */
-            color: #D6BD98; /* Text color for active page */
-            border: 2px solid white; /* White border for active page */
-        }
-
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+        }
+        .intro {
             text-align: center;
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
         }
         .products {
             display: flex;
-            flex-direction: column; /* Align products vertically */
-            align-items: center; /* Center-align products horizontally */
-            gap: 20px; /* Space between products */
+            justify-content: space-around;
+            margin-top: 30px;
         }
         .product {
-            border: 1px solid #ccc;
-            border-radius: 50px;
-            padding: 20px;
-            width: 80%; /* Adjust width as needed */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
             background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .product img {
-            width: 100%;
-            height: auto;
-            max-height: 200px; /* Adjust height if needed */
-            object-fit: cover;
+            max-width: 100%;
             border-radius: 5px;
-            margin-bottom: 15px; /* Space between image and text */
         }
         .product h2 {
-            margin-top: 0;
+            font-size: 1.5em;
+            color: #333;
         }
-        .product button {
-            background-color: #40534C; /* Button background color */
-            color: #D6BD98; /* Button text color */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .product button:hover {
-            background-color: #677D6A; /* Button hover background color */
-            color: #1A3636; /* Button hover text color */
+        .product p {
+            font-size: 1em;
+            color: #666;
         }
         footer {
-            background-color: #1A3636; /* Footer background color */
-            color: #D6BD98; /* Footer text color */
+            background-color: #ff6f61;
+            color: white;
             text-align: center;
             padding: 10px 0;
             margin-top: 30px;
@@ -110,44 +80,43 @@
 <body>
 
 <header>
-    <h1>Welcome to My Mushroom Shop</h1>
-    <img src="brown-mushroom-53494-scaled.webp" alt="Mushroom Banner">
+    <h1>Welcome to My Shop</h1>
 </header>
 
-<div class="nav-wrapper">
-    <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <div class="container">
-    <h2>Our Mushrooms</h2>
+    <div class="intro">
+        <h1>Your Sweet Journey Begins Here</h1>
+        <p>Discover the finest selection of candies and treats that will satisfy your sweet tooth.</p>
+    </div>
+
     <div class="products">
         <div class="product">
-            <img src="download.webp" alt="Shiitake Mushrooms">
-            <h2>Shiitake Mushrooms</h2>
-            <p>A flavorful and meaty mushroom, perfect for soups and stir-fries.</p>
-            <button onclick="window.location.href='buy-shiitake.html'">Buy Now</button>
+            <img src="https://via.placeholder.com/150" alt="Candy 1">
+            <h2>Gummy Bears</h2>
+            <p>Colorful, chewy, and full of flavor. A classic treat for all ages.</p>
         </div>
         <div class="product">
-            <img src="download.webp" alt="Portobello Mushrooms">
-            <h2>Portobello Mushrooms</h2>
-            <p>Large and hearty mushrooms ideal for grilling and roasting.</p>
-            <button onclick="window.location.href='buy-portobello.html'">Buy Now</button>
+            <img src="https://via.placeholder.com/150" alt="Candy 2">
+            <h2>Chocolate Bars</h2>
+            <p>Rich and creamy chocolate bars made from the finest cocoa.</p>
         </div>
         <div class="product">
-            <img src="download.webp" alt="Oyster Mushrooms">
-            <h2>Oyster Mushrooms</h2>
-            <p>Tender and delicate mushrooms with a mild flavor, great for sautéing.</p>
-            <button onclick="window.location.href='buy-oyster.html'">Buy Now</button>
+            <img src="https://via.placeholder.com/150" alt="Candy 3">
+            <h2>Lollipops</h2>
+            <p>Sweet and fruity lollipops that last a long time.</p>
         </div>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 My Mushroom Shop. All rights reserved.</p>
+    <p>&copy; 2024 My Shop. All rights reserved.</p>
 </footer>
 
 </body>
